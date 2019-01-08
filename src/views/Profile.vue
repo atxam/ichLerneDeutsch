@@ -1,10 +1,12 @@
 <template>
   <v-container test>
-    <h1>Home</h1>
-    <h5>{{this.$store.getters.getUser}}</h5>
+    <h1>Profile</h1>
   </v-container>
 </template>
 
 <script>
 export default {};
 </script>
+
+<style>
+</style>
