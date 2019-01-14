@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-lg>
+  <v-container v-if="book" grid-list-lg>
     <v-layout>
       <v-flex xs12 sm10 md8 lg6 offset-sm1 offset-md2 offset-lg3>
         <!-- BOOK DETAILS -->
@@ -34,7 +34,7 @@
         <!-- BOOK PARTS -->
         <v-card v-for="(part, i) in book.parts" :key="i" class="mt-3">
           <v-card-actions>
-            <h5 class="headline">Some title</h5>
+            <h5 class="headline">{{part.title}}</h5>
             <v-spacer></v-spacer>
             <v-btn
               :to="{name: 'bookPart', params: {bookId: book.id, partId: part.id}}"
@@ -51,12 +51,16 @@
 import { mapGetters } from "vuex";
 export default {
   props: ["bookId"],
+  data() {
+    return {};
+  },
   computed: {
     ...mapGetters(["getBookById"]),
     book() {
       return this.getBookById(this.bookId);
     }
-  }
+  },
+  methods: {}
 };
 </script>
 

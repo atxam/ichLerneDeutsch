@@ -21,6 +21,7 @@ db.settings({
 Vue.$db = db;
 
 
+
 new Vue({
   el: '#app',
   router,

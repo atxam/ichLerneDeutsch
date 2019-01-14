@@ -63,79 +63,80 @@ export default {
     //     }]
     //   }
     // ],
-    books: [],
 
-    bookParts: [{
-      bookId: 11111111,
-      bookTitle: 'Harry Potter und der Stein der Weisen - 1',
-      partId: 'part1111111',
-      partTitle: 'Kapital 1',
-      paragraphs: [{
-          sentences: [{
-              origText: 'In modernen Unternehmen laufen sehr viele Arbeitsvorgänge automatisch ab. Ständig automatisieren alle heutigen Hersteller ihre Fertigungsprozesse.',
-              transText: 'На современном предприятии очень многие технологические процессы протекают автоматически. Все сегодняшние производители постоянно автоматизируют процессы производства.'
-            },
-            {
-              origText: 'Mit jeder weiteren Automatisierung werden zahlreiche Arbeitsplätze unnötig. Also die Automatisierung hat ganz unterschiedliche Nach- und Vorteile für Arbeiter und Arbeitgeber.',
-              transText: 'С каждой новой ступенью автоматизации становятся ненужными многочисленные рабочие места. Таким образом, автоматизация имеет совершенно различные недостатки и преимущества.'
-            },
-            {
-              origText: 'Für Arbeiter bedeutet sie ein Risiko, die Arbeit zu verlieren, und für Arbeitgeber bedeutet sie eine Modernisierung mit folgender Reduzierung von Fertigungskosten.',
-              transText: 'Для рабочих она означает риск потерять работу, а для работодателей она означает модернизацию с последующим снижением расходов на производство.'
-            },
-          ]
-        },
-        {
-          sentences: [{
-              origText: 'Produktionsroboter erleichtern den Menschen die Arbeit, wobei sie diverse schwere, gesundheitsgefährdende und schmutzige Arbeiten übernehmen. Der Robotereinsatz beschleunigt die Erfüllung von Arbeiten, macht sie günstiger und erhöht dadurch die gesamte Wirtschaftlichkeit der Produktion.',
-              transText: 'Промышленные роботы облегчают труд людей, беря на себя выполнение тяжелых, вредных для здоровья и грязных работ. Внедрение роботов ускоряет выполнение работ, ведет к их удешевлению и, как следствие, повышает общую эффективность производства.'
-            },
-            {
-              origText: 'Andererseits führt der Robotereinsatz zu Massenentlassungen der Arbeiter. Die verbleibenden Facharbeiter müssen qualifiziert werden, um komplizierte Maschinen und Roboter bedienen zu können.',
-              transText: 'С другой стороны, использование роботов приводит к массовым увольнениям рабочих. Остающиеся специалисты должны получать соответствующую квалификацию, чтобы быть в состоянии обслуживать сложные станки и робототехнику.'
-            },
-            {
-              origText: 'Obwohl die Investitionen für Roboter ziemlich hoch sind, rentieren sie sich schnell und reduzieren die Fertigungskosten. Dadurch wird die Konkurrenzfähigkeit des Unternehmens auf dem Markt erhöht.',
-              transText: 'Хотя инвестиции в робототехнику достаточно высоки, они быстро окупаются и снижают производственные расходы. Вследствие этого растет конкурентоспособность предприятия на рынке.'
-            }
-          ]
-        }
 
-      ],
-      words: [{
-          origWord: 'Hallo',
-          transWord: 'Привет'
-        },
-        {
-          origWord: 'Hallo 2',
-          transWord: 'Привет'
-        },
-        {
-          origWord: 'Hallo 3',
-          transWord: 'Привет'
-        },
-        {
-          origWord: 'Hallo 4',
-          transWord: 'Привет'
-        },
-        {
-          origWord: 'Hallo 5',
-          transWord: 'Привет'
-        },
-        {
-          origWord: 'Hallo 6',
-          transWord: 'Привет'
-        },
-        {
-          origWord: 'Hallo 7',
-          transWord: 'Привет'
-        },
-        {
-          origWord: 'Hallo 8',
-          transWord: 'Привет'
-        }
-      ]
-    }]
+    // bookParts: [{
+    //   bookId: 11111111,
+    //   bookTitle: 'Harry Potter und der Stein der Weisen - 1',
+    //   partId: 'part1111111',
+    //   partTitle: 'Kapital 1',
+    //   paragraphs: [{
+    //       sentences: [{
+    //           origText: 'In modernen Unternehmen laufen sehr viele Arbeitsvorgänge automatisch ab. Ständig automatisieren alle heutigen Hersteller ihre Fertigungsprozesse.',
+    //           transText: 'На современном предприятии очень многие технологические процессы протекают автоматически. Все сегодняшние производители постоянно автоматизируют процессы производства.'
+    //         },
+    //         {
+    //           origText: 'Mit jeder weiteren Automatisierung werden zahlreiche Arbeitsplätze unnötig. Also die Automatisierung hat ganz unterschiedliche Nach- und Vorteile für Arbeiter und Arbeitgeber.',
+    //           transText: 'С каждой новой ступенью автоматизации становятся ненужными многочисленные рабочие места. Таким образом, автоматизация имеет совершенно различные недостатки и преимущества.'
+    //         },
+    //         {
+    //           origText: 'Für Arbeiter bedeutet sie ein Risiko, die Arbeit zu verlieren, und für Arbeitgeber bedeutet sie eine Modernisierung mit folgender Reduzierung von Fertigungskosten.',
+    //           transText: 'Для рабочих она означает риск потерять работу, а для работодателей она означает модернизацию с последующим снижением расходов на производство.'
+    //         },
+    //       ]
+    //     },
+    //     {
+    //       sentences: [{
+    //           origText: 'Produktionsroboter erleichtern den Menschen die Arbeit, wobei sie diverse schwere, gesundheitsgefährdende und schmutzige Arbeiten übernehmen. Der Robotereinsatz beschleunigt die Erfüllung von Arbeiten, macht sie günstiger und erhöht dadurch die gesamte Wirtschaftlichkeit der Produktion.',
+    //           transText: 'Промышленные роботы облегчают труд людей, беря на себя выполнение тяжелых, вредных для здоровья и грязных работ. Внедрение роботов ускоряет выполнение работ, ведет к их удешевлению и, как следствие, повышает общую эффективность производства.'
+    //         },
+    //         {
+    //           origText: 'Andererseits führt der Robotereinsatz zu Massenentlassungen der Arbeiter. Die verbleibenden Facharbeiter müssen qualifiziert werden, um komplizierte Maschinen und Roboter bedienen zu können.',
+    //           transText: 'С другой стороны, использование роботов приводит к массовым увольнениям рабочих. Остающиеся специалисты должны получать соответствующую квалификацию, чтобы быть в состоянии обслуживать сложные станки и робототехнику.'
+    //         },
+    //         {
+    //           origText: 'Obwohl die Investitionen für Roboter ziemlich hoch sind, rentieren sie sich schnell und reduzieren die Fertigungskosten. Dadurch wird die Konkurrenzfähigkeit des Unternehmens auf dem Markt erhöht.',
+    //           transText: 'Хотя инвестиции в робототехнику достаточно высоки, они быстро окупаются и снижают производственные расходы. Вследствие этого растет конкурентоспособность предприятия на рынке.'
+    //         }
+    //       ]
+    //     }
+
+    //   ],
+    //   words: [{
+    //       origWord: 'Hallo',
+    //       transWord: 'Привет'
+    //     },
+    //     {
+    //       origWord: 'Hallo 2',
+    //       transWord: 'Привет'
+    //     },
+    //     {
+    //       origWord: 'Hallo 3',
+    //       transWord: 'Привет'
+    //     },
+    //     {
+    //       origWord: 'Hallo 4',
+    //       transWord: 'Привет'
+    //     },
+    //     {
+    //       origWord: 'Hallo 5',
+    //       transWord: 'Привет'
+    //     },
+    //     {
+    //       origWord: 'Hallo 6',
+    //       transWord: 'Привет'
+    //     },
+    //     {
+    //       origWord: 'Hallo 7',
+    //       transWord: 'Привет'
+    //     },
+    //     {
+    //       origWord: 'Hallo 8',
+    //       transWord: 'Привет'
+    //     }
+    //   ]
+    // }]
+    books: []
   },
   mutations: {
     setBooks(state, payload) {
@@ -147,9 +148,9 @@ export default {
       commit
     }) {
       try {
+        console.log('fetchBooks')
         commit('setLoading', true)
         commit('clearError')
-        console.log('fetchBooks')
 
         let books = [];
 
@@ -177,6 +178,28 @@ export default {
         commit('setLoading', false)
         commit('setError', error.message)
       }
+    },
+
+    async fetchBookPartById({
+      commit,
+      getters
+    }, {
+      bookId,
+      partId
+    }) {
+      try {
+        commit('setLoading', true)
+        commit('clearError')
+
+        let bookPart = await Vue.$db.collection('bookParts').doc(bookId + partId).get()
+
+        commit('setLoading', false)
+        return bookPart.data()
+      } catch (error) {
+        commit('setLoading', false)
+        commit('setError', error.message)
+        throw error.message
+      }
     }
   },
   getters: {
@@ -185,9 +208,6 @@ export default {
     },
     getBookById(state) {
       return id => state.books.find(b => b.id == id)
-    },
-    getBookPartById(state) {
-      return (bookId, partId) => state.bookParts.find(p => p.bookId == bookId && p.partId == partId)
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
-  <v-container grid-list-md>
-    <v-layout wrap>
+  <v-container v-if="part" grid-list-md>
+    <v-layout class="mt-2" wrap>
       <v-flex xs12 sm10 lg8 xl6 offset-sm1 offset-lg2 offset-xl3>
         <!-- BOOK PART CONTENT -->
         <app-book-part-content :part="part"></app-book-part-content>
@@ -32,22 +32,33 @@
 </template>
 
 <script>
+import Vue from "vue";
 import { mapGetters } from "vuex";
 import BookPartContent from "@/components/BookPartContent.vue";
 export default {
   props: ["bookId", "partId"],
   data() {
-    return {};
+    return {
+      part: null
+    };
   },
   computed: {
-    ...mapGetters(["getBookPartById"]),
-    part() {
-      return this.getBookPartById(this.bookId, this.partId);
-    }
+    ...mapGetters([])
   },
-
+  methods: {},
   components: {
     "app-book-part-content": BookPartContent
+  },
+  created() {
+    this.$store
+      .dispatch("fetchBookPartById", {
+        bookId: this.bookId,
+        partId: this.partId
+      })
+      .then(part => {
+        this.part = part;
+      })
+      .catch(error => console.log(error));
   }
 };
 </script>

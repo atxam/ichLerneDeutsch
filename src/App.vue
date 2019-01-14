@@ -3,8 +3,8 @@
     <app-header></app-header>
 
     <v-content>
-      <v-progress-linear v-if="loading" class="mt-0" :indeterminate="true"></v-progress-linear>
-      <router-view v-else></router-view>
+      <!-- <v-progress-linear v-if="loading" class="mt-0" :indeterminate="true"></v-progress-linear> -->
+      <router-view></router-view>
     </v-content>
     <app-snackbar></app-snackbar>
     <app-footer></app-footer>

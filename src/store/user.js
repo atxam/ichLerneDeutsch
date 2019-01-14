@@ -70,9 +70,11 @@ export default {
     },
 
     changeState({ // CHANGE STATE
-      commit
+      commit,
+      dispatch
     }, id) {
       commit('setUser', new User(id))
+
     }
   },
   getters: {
