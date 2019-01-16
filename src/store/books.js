@@ -181,8 +181,7 @@ export default {
     },
 
     async fetchBookPartById({
-      commit,
-      getters
+      commit
     }, {
       bookId,
       partId

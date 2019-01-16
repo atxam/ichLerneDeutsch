@@ -7,6 +7,7 @@ import 'vuetify/dist/vuetify.min.css'
 import firebase from 'firebase/app'
 import firebaseConfig from './cfg/firebase.js'
 import 'firebase/firestore'
+import formattedDate from './filters/formattedDate'
 
 Vue.use(Vuetify)
 Vue.config.productionTip = false
@@ -20,7 +21,7 @@ db.settings({
 });
 Vue.$db = db;
 
-
+Vue.filter('formattedDate', formattedDate)
 
 new Vue({
   el: '#app',

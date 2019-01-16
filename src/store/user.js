@@ -74,7 +74,7 @@ export default {
       dispatch
     }, id) {
       commit('setUser', new User(id))
-
+      dispatch('fetchUserData', id)
     }
   },
   getters: {
